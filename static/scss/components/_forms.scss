@@ -1,0 +1,17 @@
+@use "../abstract" as abs; 
+
+.login-form {
+    text-align: center;
+    padding: 100px;
+    padding-top: 70px;
+    background-color: abs.$fourth-color;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width:767px){
+.login-form{
+    padding: 50px;
+    padding-bottom: 100px;
+}
+}
