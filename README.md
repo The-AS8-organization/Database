@@ -18,3 +18,8 @@ Maintaining a resourceful database is nowadays crucial for the development of an
 
 ## Credits
 *Ahammad Shawki* (@ahammadshawki8) - Designed the entire database management plan and implemented them to materialize the initial backbone of this application.
+
+<br>
+
+## License
+Details can be found in [LICENSE](LICENSE)

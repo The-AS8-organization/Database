@@ -46,63 +46,6 @@ def height_calc(num):
         return 15
 
 
-def fund_source_location():
-    with open("backupfiles/FundSourceBUF.csv", "r") as rfile:
-        my_reader = csv.reader(rfile)
-        location_dict = Counter()
-
-        next(my_reader)
-        for line in my_reader:
-            location_dict.update([line[1]])  
-
-        temp_tuple_list = sorted(dict(location_dict).items(), key=lambda x:x[1])
-        x_value = []
-        y_value = []
-        for tup in temp_tuple_list:
-            x_value.append(tup[0])
-            y_value.append(tup[1])
-        height_num = len(x_value)
-
-        plt.style.use("seaborn")
-        plt.figure(figsize=(10,height_calc(height_num)))
-        plt.barh(x_value, y_value , color="#0AB210")
-
-        plt.title("FUND SOURCES' LOCATION")
-        plt.xlabel("Number Of Fund Sources")
-        plt.ylabel("Location")
-
-        plt.tight_layout()
-        plt.savefig("static/images/plots/plot1.png")
-
-
-def fund_source_funding_possibility():
-    with open("backupfiles/FundSourceBUF.csv", "r") as rfile:
-        my_reader = csv.reader(rfile)
-        possibility_dict = Counter()
-
-        next(my_reader)
-        for line in my_reader:
-            possibility_dict.update([line[4]])  
-
-        temp_tuple_list = sorted(dict(possibility_dict).items(), key=lambda x:x[1])
-        x_value = []
-        y_value = []
-        for tup in temp_tuple_list:
-            x_value.append(tup[0])
-            y_value.append(tup[1])
-
-        colors = ["#0e8f13", "#0AB210", "#0ffc17"]
-        plt.style.use("seaborn")
-        plt.figure(figsize=(10,4))
-        _, _, autotexts = plt.pie(y_value, labels=x_value , colors=colors, wedgeprops={"edgecolor":"white"}, autopct="%1.1f%%")
-        for autotext in autotexts:
-            autotext.set_color('white')
-
-        plt.title("FUND SOURCES' FUNDING POSSIBILITY")
-        plt.tight_layout()
-        plt.savefig("static/images/plots/plot2.png")
-
-
 def organization_location():
     with open("backupfiles/OrganizationBUF.csv", "r") as rfile:
         my_reader = csv.reader(rfile)
@@ -110,7 +53,7 @@ def organization_location():
 
         next(my_reader)
         for line in my_reader:
-            location_dict.update([line[1]])   
+            location_dict.update([line[4]])   
 
         temp_tuple_list = sorted(dict(location_dict).items(), key=lambda x:x[1])
         x_value = []
@@ -129,47 +72,19 @@ def organization_location():
         plt.ylabel("Location")
 
         plt.tight_layout()
-        plt.savefig("static/images/plots/plot3.png")
+        plt.savefig("static/images/plots/plot1.png")
 
 
-def organization_category():
+def organization_is_club():
     with open("backupfiles/OrganizationBUF.csv", "r") as rfile:
         my_reader = csv.reader(rfile)
-        category_dict = Counter()
+        is_club_dict = Counter()
 
         next(my_reader)
         for line in my_reader:
-            category_dict.update([line[2]])  
+            is_club_dict.update([line[5]])  
 
-        temp_tuple_list = sorted(dict(category_dict).items(), key=lambda x:x[1])
-        x_value = []
-        y_value = []
-        for tup in temp_tuple_list:
-            x_value.append(tup[0])
-            y_value.append(tup[1])
-
-        colors = ["#0e8f13", "#0AB210", "#0ffc17", "#9dff7d"]
-        plt.style.use("seaborn")
-        plt.figure(figsize=(10,4))
-        _, _, autotexts = plt.pie(y_value, labels=x_value , colors=colors, wedgeprops={"edgecolor":"white"}, autopct="%1.1f%%")
-        for autotext in autotexts:
-            autotext.set_color('white')
-
-        plt.title("ORGANIZATIONS' CATEGORY")
-        plt.tight_layout()
-        plt.savefig("static/images/plots/plot4.png")
-
-
-def organization_status():
-    with open("backupfiles/OrganizationBUF.csv", "r") as rfile:
-        my_reader = csv.reader(rfile)
-        status_dict = Counter()
-
-        next(my_reader)
-        for line in my_reader:
-            status_dict.update([line[5]])  
-
-        temp_tuple_list = sorted(dict(status_dict).items(), key=lambda x:x[1])
+        temp_tuple_list = sorted(dict(is_club_dict).items(), key=lambda x:x[1])
         x_value = []
         y_value = []
         for tup in temp_tuple_list:
@@ -183,69 +98,129 @@ def organization_status():
         for autotext in autotexts:
             autotext.set_color('white')
 
-        plt.title("ORGANIZATIONS' STATUS")
+        plt.title("ORGANIZATIONS' IS_CLUB")
         plt.tight_layout()
-        plt.savefig("static/images/plots/plot5.png")
+        plt.savefig("static/images/plots/plot2.png")
 
 
-def social_post_platform():
-    with open("backupfiles/SocialPostBUF.csv", "r") as rfile:
+def organization_popularity():
+    with open("backupfiles/OrganizationBUF.csv", "r") as rfile:
         my_reader = csv.reader(rfile)
-        platform_dict = Counter()
+        popularity_dict = Counter()
 
         next(my_reader)
         for line in my_reader:
-            platform_dict.update([line[0]])  
+            popularity_dict.update([line[7]])  
 
-        temp_tuple_list = sorted(dict(platform_dict).items(), key=lambda x:x[1])
+        temp_tuple_list = sorted(dict(popularity_dict).items(), key=lambda x:x[1])
         x_value = []
         y_value = []
         for tup in temp_tuple_list:
             x_value.append(tup[0])
             y_value.append(tup[1])
 
-        colors = ["#191a18", "#0e8f13", "#0AB210", "#0ffc17", "#9dff7d"]
+        colors = ["#0e8f13", "#0AB210", "#0AB210"]
         plt.style.use("seaborn")
         plt.figure(figsize=(10,4))
         _, _, autotexts = plt.pie(y_value, labels=x_value , colors=colors, wedgeprops={"edgecolor":"white"}, autopct="%1.1f%%")
         for autotext in autotexts:
             autotext.set_color('white')
 
-        plt.title("SOCIALPOSTS' PLATFORM")
+        plt.title("ORGANIZATIONS' POPULARITY")
         plt.tight_layout()
-        plt.savefig("static/images/plots/plot6.png")
+        plt.savefig("static/images/plots/plot3.png")
 
 
-def product_price():
-    with open("backupfiles/ProductBUF.csv", "r") as rfile:
+def organization_is_active():
+    with open("backupfiles/OrganizationBUF.csv", "r") as rfile:
         my_reader = csv.reader(rfile)
-        price_list = []
+        is_active_dict = Counter()
 
         next(my_reader)
         for line in my_reader:
-            price = int(line[1])
-            price_list.append(price)  
+            is_active_dict.update([line[8]])  
 
-        lowest = min(price_list)
-        highest = max(price_list)
-        bins = [0]
+        temp_tuple_list = sorted(dict(is_active_dict).items(), key=lambda x:x[1])
+        x_value = []
+        y_value = []
+        for tup in temp_tuple_list:
+            x_value.append(tup[0])
+            y_value.append(tup[1])
 
-        current = lowest
-        while current <= highest:
-            bins.append(current)
-            current += 500
-        bins.append(current)
+        colors = ["#0e8f13", "#0AB210"]
+        plt.style.use("seaborn")
+        plt.figure(figsize=(10,4))
+        _, _, autotexts = plt.pie(y_value, labels=x_value , colors=colors, wedgeprops={"edgecolor":"white"}, autopct="%1.1f%%")
+        for autotext in autotexts:
+            autotext.set_color('white')
+
+        plt.title("ORGANIZATIONS' IS_ACTIVE")
+        plt.tight_layout()
+        plt.savefig("static/images/plots/plot4.png")
+
+
+def organization_initiatives():
+    with open("backupfiles/InitiativeBUF.csv", "r") as rfile:
+        my_reader = csv.reader(rfile)
+        org_dict = Counter()
+
+        next(my_reader)
+        for line in my_reader:
+            org_dict.update([line[4]])   
+
+        temp_tuple_list = sorted(dict(org_dict).items(), key=lambda x:x[1])
+        x_value = []
+        y_value = []
+        for tup in temp_tuple_list:
+            if tup[0] == "":
+                x_value.append("Others")
+            else:
+                x_value.append(tup[0])
+            y_value.append(tup[1])
+        height_num = len(x_value)
 
         plt.style.use("seaborn")
-        plt.figure(figsize=(10, 6))
-        plt.hist(price_list, bins=bins, color="#0AB210", edgecolor="#ffffff")
+        plt.figure(figsize=(10,height_calc(height_num)))
+        plt.barh(x_value, y_value , color="#0AB210")
 
-        plt.title("PRODUCTS' PRICE")
-        plt.xlabel("Price")
-        plt.ylabel("Number of Products")
+        plt.title("ORGANIZATIONS' INITIATIVES")
+        plt.xlabel("Number Of Initiatives")
+        plt.ylabel("Organization")
 
         plt.tight_layout()
-        plt.savefig("static/images/plots/plot7.png")
+        plt.savefig("static/images/plots/plot5.png")
+
+
+def organization_resources():
+    with open("backupfiles/ResourceBUF.csv", "r") as rfile:
+        my_reader = csv.reader(rfile)
+        org_dict = Counter()
+
+        next(my_reader)
+        for line in my_reader:
+            org_dict.update([line[5]])   
+
+        temp_tuple_list = sorted(dict(org_dict).items(), key=lambda x:x[1])
+        x_value = []
+        y_value = []
+        for tup in temp_tuple_list:
+            if tup[0] == "":
+                x_value.append("Others")
+            else:
+                x_value.append(tup[0])
+            y_value.append(tup[1])
+        height_num = len(x_value)
+
+        plt.style.use("seaborn")
+        plt.figure(figsize=(10,height_calc(height_num)))
+        plt.barh(x_value, y_value , color="#0AB210")
+
+        plt.title("ORGANIZATIONS' RESOURCES")
+        plt.xlabel("Number Of Resources")
+        plt.ylabel("Organization")
+
+        plt.tight_layout()
+        plt.savefig("static/images/plots/plot6.png")
 
 
 def consumer_location():
@@ -255,7 +230,7 @@ def consumer_location():
 
         next(my_reader)
         for line in my_reader:
-            location_dict.update([line[3]])   
+            location_dict.update([line[4]])   
 
         temp_tuple_list = sorted(dict(location_dict).items(), key=lambda x:x[1])
         x_value = []
@@ -274,7 +249,7 @@ def consumer_location():
         plt.ylabel("Location")
 
         plt.tight_layout()
-        plt.savefig("static/images/plots/plot8.png")
+        plt.savefig("static/images/plots/plot7.png")
 
 
 def consumer_age():
@@ -284,7 +259,7 @@ def consumer_age():
 
         next(my_reader)
         for line in my_reader:
-            age = int(line[2])
+            age = int(line[3])
             age_list.append(age)  
 
         lowest = min(age_list)
@@ -306,4 +281,62 @@ def consumer_age():
         plt.ylabel("Number of Consumers")
 
         plt.tight_layout()
+        plt.savefig("static/images/plots/plot8.png")
+
+
+def consumer_profession():
+    with open("backupfiles/ConsumerBUF.csv", "r") as rfile:
+        my_reader = csv.reader(rfile)
+        profession_dict = Counter()
+
+        next(my_reader)
+        for line in my_reader:
+            profession_dict.update([line[4]])   
+
+        temp_tuple_list = sorted(dict(profession_dict).items(), key=lambda x:x[1])
+        x_value = []
+        y_value = []
+        for tup in temp_tuple_list:
+            x_value.append(tup[0])
+            y_value.append(tup[1])
+        height_num = len(x_value)
+
+        plt.style.use("seaborn")
+        plt.figure(figsize=(10,height_calc(height_num)))
+        plt.barh(x_value, y_value , color="#0AB210")
+
+        plt.title("CONSUMERS' PROFESSION")
+        plt.xlabel("Number Of Consumers")
+        plt.ylabel("Professsion")
+
+        plt.tight_layout()
         plt.savefig("static/images/plots/plot9.png")
+
+
+def consumer_institution():
+    with open("backupfiles/ConsumerBUF.csv", "r") as rfile:
+        my_reader = csv.reader(rfile)
+        institution_dict = Counter()
+
+        next(my_reader)
+        for line in my_reader:
+            institution_dict.update([line[4]])   
+
+        temp_tuple_list = sorted(dict(institution_dict).items(), key=lambda x:x[1])
+        x_value = []
+        y_value = []
+        for tup in temp_tuple_list:
+            x_value.append(tup[0])
+            y_value.append(tup[1])
+        height_num = len(x_value)
+
+        plt.style.use("seaborn")
+        plt.figure(figsize=(10,height_calc(height_num)))
+        plt.barh(x_value, y_value , color="#0AB210")
+
+        plt.title("CONSUMERS' INSTITUTION")
+        plt.xlabel("Number Of Consumers")
+        plt.ylabel("Institution")
+
+        plt.tight_layout()
+        plt.savefig("static/images/plots/plot10.png")
