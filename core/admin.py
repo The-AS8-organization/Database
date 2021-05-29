@@ -27,7 +27,7 @@ class InitiativeAdmin(admin.ModelAdmin):
     list_display = ("name", "date", "site", "parent_org")
     search_fields = ("name", "site")
     list_filter = ("date", "parent_org", "related_tag")
-    filter_horizontal = ("followed_strategy", "related_tag")
+    filter_horizontal = ("related_tag", )
 
 class ResourceAdmin(admin.ModelAdmin):
     list_display = ("name", "date", "link", "parent_org", "can_display")
@@ -36,7 +36,7 @@ class ResourceAdmin(admin.ModelAdmin):
     filter_horizontal = ("followed_initiative", "related_tag")
 
 class ConsumerAdmin(NumericFilterModelAdmin, admin.ModelAdmin):
-    list_display = ("name", "email", "age", "location", "profession", "Institution")
+    list_display = ("name", "email", "age", "location", "profession", "institution")
     search_fields = ("name", "email", "location", "profession", "institution", "social_link")
     list_filter = (("age", SliderNumericFilter), )
 

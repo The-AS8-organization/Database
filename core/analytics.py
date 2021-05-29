@@ -53,7 +53,7 @@ def organization_location():
 
         next(my_reader)
         for line in my_reader:
-            location_dict.update([line[4]])   
+            location_dict.update([line[3]])   
 
         temp_tuple_list = sorted(dict(location_dict).items(), key=lambda x:x[1])
         x_value = []
@@ -65,7 +65,7 @@ def organization_location():
 
         plt.style.use("seaborn")
         plt.figure(figsize=(10,height_calc(height_num)))
-        plt.barh(x_value, y_value , color="#0AB210")
+        plt.barh(x_value, y_value , color="#3dc5eb")
 
         plt.title("ORGANIZATIONS' LOCATION")
         plt.xlabel("Number Of Organizations")
@@ -82,7 +82,7 @@ def organization_is_club():
 
         next(my_reader)
         for line in my_reader:
-            is_club_dict.update([line[5]])  
+            is_club_dict.update([line[4]])  
 
         temp_tuple_list = sorted(dict(is_club_dict).items(), key=lambda x:x[1])
         x_value = []
@@ -91,7 +91,7 @@ def organization_is_club():
             x_value.append(tup[0])
             y_value.append(tup[1])
 
-        colors = ["#0e8f13", "#0AB210"]
+        colors = ["#3dc5eb", "#30a6c7"]
         plt.style.use("seaborn")
         plt.figure(figsize=(10,4))
         _, _, autotexts = plt.pie(y_value, labels=x_value , colors=colors, wedgeprops={"edgecolor":"white"}, autopct="%1.1f%%")
@@ -110,7 +110,7 @@ def organization_popularity():
 
         next(my_reader)
         for line in my_reader:
-            popularity_dict.update([line[7]])  
+            popularity_dict.update([line[6]])  
 
         temp_tuple_list = sorted(dict(popularity_dict).items(), key=lambda x:x[1])
         x_value = []
@@ -119,7 +119,7 @@ def organization_popularity():
             x_value.append(tup[0])
             y_value.append(tup[1])
 
-        colors = ["#0e8f13", "#0AB210", "#0AB210"]
+        colors = ["#3dc5eb", "#30a6c7", "#26849e"]
         plt.style.use("seaborn")
         plt.figure(figsize=(10,4))
         _, _, autotexts = plt.pie(y_value, labels=x_value , colors=colors, wedgeprops={"edgecolor":"white"}, autopct="%1.1f%%")
@@ -138,7 +138,7 @@ def organization_is_active():
 
         next(my_reader)
         for line in my_reader:
-            is_active_dict.update([line[8]])  
+            is_active_dict.update([line[7]])  
 
         temp_tuple_list = sorted(dict(is_active_dict).items(), key=lambda x:x[1])
         x_value = []
@@ -147,7 +147,7 @@ def organization_is_active():
             x_value.append(tup[0])
             y_value.append(tup[1])
 
-        colors = ["#0e8f13", "#0AB210"]
+        colors = ["#3dc5eb", "#30a6c7"]
         plt.style.use("seaborn")
         plt.figure(figsize=(10,4))
         _, _, autotexts = plt.pie(y_value, labels=x_value , colors=colors, wedgeprops={"edgecolor":"white"}, autopct="%1.1f%%")
@@ -166,7 +166,7 @@ def organization_initiatives():
 
         next(my_reader)
         for line in my_reader:
-            org_dict.update([line[4]])   
+            org_dict.update([line[3]])   
 
         temp_tuple_list = sorted(dict(org_dict).items(), key=lambda x:x[1])
         x_value = []
@@ -181,7 +181,7 @@ def organization_initiatives():
 
         plt.style.use("seaborn")
         plt.figure(figsize=(10,height_calc(height_num)))
-        plt.barh(x_value, y_value , color="#0AB210")
+        plt.barh(x_value, y_value , color="#3dc5eb")
 
         plt.title("ORGANIZATIONS' INITIATIVES")
         plt.xlabel("Number Of Initiatives")
@@ -213,7 +213,7 @@ def organization_resources():
 
         plt.style.use("seaborn")
         plt.figure(figsize=(10,height_calc(height_num)))
-        plt.barh(x_value, y_value , color="#0AB210")
+        plt.barh(x_value, y_value , color="#3dc5eb")
 
         plt.title("ORGANIZATIONS' RESOURCES")
         plt.xlabel("Number Of Resources")
@@ -230,7 +230,7 @@ def consumer_location():
 
         next(my_reader)
         for line in my_reader:
-            location_dict.update([line[4]])   
+            location_dict.update([line[3]])   
 
         temp_tuple_list = sorted(dict(location_dict).items(), key=lambda x:x[1])
         x_value = []
@@ -242,7 +242,7 @@ def consumer_location():
 
         plt.style.use("seaborn")
         plt.figure(figsize=(10,height_calc(height_num)))
-        plt.barh(x_value, y_value , color="#0AB210")
+        plt.barh(x_value, y_value , color="#3dc5eb")
 
         plt.title("CONSUMERS' LOCATION")
         plt.xlabel("Number Of Consumers")
@@ -259,7 +259,7 @@ def consumer_age():
 
         next(my_reader)
         for line in my_reader:
-            age = int(line[3])
+            age = int(line[2])
             age_list.append(age)  
 
         lowest = min(age_list)
@@ -274,7 +274,7 @@ def consumer_age():
 
         plt.style.use("seaborn")
         plt.figure(figsize=(10, 6))
-        plt.hist(age_list, bins=bins, color="#0AB210", edgecolor="#ffffff")
+        plt.hist(age_list, bins=bins, color="#3dc5eb", edgecolor="#ffffff")
 
         plt.title("CONSUMERS' AGE")
         plt.xlabel("Age")
@@ -303,7 +303,7 @@ def consumer_profession():
 
         plt.style.use("seaborn")
         plt.figure(figsize=(10,height_calc(height_num)))
-        plt.barh(x_value, y_value , color="#0AB210")
+        plt.barh(x_value, y_value , color="#3dc5eb")
 
         plt.title("CONSUMERS' PROFESSION")
         plt.xlabel("Number Of Consumers")
@@ -320,7 +320,7 @@ def consumer_institution():
 
         next(my_reader)
         for line in my_reader:
-            institution_dict.update([line[4]])   
+            institution_dict.update([line[5]])   
 
         temp_tuple_list = sorted(dict(institution_dict).items(), key=lambda x:x[1])
         x_value = []
@@ -332,7 +332,7 @@ def consumer_institution():
 
         plt.style.use("seaborn")
         plt.figure(figsize=(10,height_calc(height_num)))
-        plt.barh(x_value, y_value , color="#0AB210")
+        plt.barh(x_value, y_value , color="#3dc5eb")
 
         plt.title("CONSUMERS' INSTITUTION")
         plt.xlabel("Number Of Consumers")
