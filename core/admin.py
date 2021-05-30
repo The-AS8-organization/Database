@@ -1,7 +1,7 @@
 # Importing necessary modules & libraries
 from django.contrib import admin
 from admin_numeric_filter.admin import NumericFilterModelAdmin, SliderNumericFilter
-from core.models import Tag, Organization, Initiative, Resource, Consumer
+from core.models import UserAdditionalInfo, Tag, Organization, Initiative, Resource, Consumer
 
 
 
@@ -13,6 +13,10 @@ admin.site.index_title = "AS8 ORG"
 
 
 # Creating some admin classes for user-friendly Django model access
+class UserAdditionalInfoAdmin(admin.ModelAdmin):
+    search_fields = ("user", "github_profile", "discord_username", "social_link")
+    list_filter = ("org_task", )
+
 class TagAdmin(admin.ModelAdmin):
     list_display = ("value", )
     search_fields = ("value",)
@@ -43,6 +47,7 @@ class ConsumerAdmin(NumericFilterModelAdmin, admin.ModelAdmin):
 
 
 # Registering Django models.
+admin.site.register(UserAdditionalInfo, UserAdditionalInfoAdmin)
 admin.site.register(Tag, TagAdmin)
 admin.site.register(Organization, OrganizationAdmin)
 admin.site.register(Initiative, InitiativeAdmin)

@@ -9,7 +9,7 @@ os.environ["DJANGO_SETTINGS_MODULE"] = "tsdb_app.settings"
 import django
 django.setup()
 
-from core.models import Tag, Organization, Initiative, Resource, Consumer
+from core.models import UserAdditionalInfo, Tag, Organization, Initiative, Resource, Consumer
 
 
 
@@ -17,6 +17,7 @@ from core.models import Tag, Organization, Initiative, Resource, Consumer
 def main():
     print("Process Started")
     print("................................\n")
+    UserAdditionalInfoBackUp()
     TagBackUp()
     OrganizationBackUp()
     InitiativeBackUp()
@@ -25,6 +26,20 @@ def main():
     Zipper()
     print("\n................................")
     print("Process successfully completed")
+
+
+
+
+def UserAdditionalInfoBackUp():
+    with open("backupfiles/UserAdditionalInfoBUF.csv", "w", newline="") as wfile:
+        my_writer=csv.writer(wfile)
+        my_writer.writerow(["fullname", "username", "email", "github_profile", "discord_username", "social_link", "org_task"])
+
+        if len(UserAdditionalInfo.objects.all()) != 0:
+            for additional in UserAdditionalInfo.objects.all():
+                fullname = additional.user.first_name + " " + additional.user.last_name
+                my_writer.writerow([fullname, additional.user.username, additional.user.email, additional.github_profile, additional.discord_username, additional.social_link, additional.org_task])
+            print("Backed Up Tag table")
 
 
 
@@ -123,6 +138,7 @@ def ConsumerBackUp():
 
 def Zipper():
     with ZipFile('BUF.zip', "w") as zip_obj:
+        zip_obj.write("backupfiles/UserAdditionalInfoBUF.csv")
         zip_obj.write("backupfiles/TagBUF.csv")
         zip_obj.write("backupfiles/OrganizationBUF.csv")
         zip_obj.write("backupfiles/InitiativeBUF.csv")
