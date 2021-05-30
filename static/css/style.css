@@ -11074,6 +11074,27 @@ footer #allright {
     padding-bottom: 100px;
   }
 }
+.un-img {
+  width: 500px;
+}
+
+#centered {
+  margin-top: -100px;
+  text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+  .un-img {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .un-img {
+    width: 250px;
+    margin-top: -30px;
+    margin-bottom: 30px;
+  }
+}
 /* 
 This is the main scss file.
 This is used for styling purpose.

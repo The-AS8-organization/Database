@@ -1,0 +1,24 @@
+@use "../abstract" as abs;
+
+.un-img {
+    width: 500px;
+}
+
+#centered {
+    margin-top: -100px;
+    text-align: center;
+}
+
+@media screen and (max-width:991px){
+.un-img {
+    width: 300px;
+}
+}
+
+@media screen and (max-width:767px){
+    .un-img {
+        width: 250px;
+        margin-top: -30px;
+        margin-bottom: 30px;
+    }
+}
