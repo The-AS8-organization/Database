@@ -128,10 +128,10 @@ def ResourceBackUp():
 def ConsumerBackUp():
     with open("backupfiles/ConsumerBUF.csv", "w", newline="") as wfile:
         my_writer=csv.writer(wfile)
-        my_writer.writerow(["name", "email", "age", "location", "profession", "institution", "social_link"])
+        my_writer.writerow(["name", "email", "age", "location", "profession", "institution", "social_link", "initiative_part", "send_newsletter"])
         if len(Consumer.objects.all()) != 0:
             for consumer in Consumer.objects.all():
-                my_writer.writerow([consumer.name, consumer.email, consumer.age, consumer.location, consumer.profession, consumer.institution, consumer.social_link])
+                my_writer.writerow([consumer.name, consumer.email, consumer.age, consumer.location, consumer.profession, consumer.institution, consumer.social_link, consumer.initiative_part, consumer.send_newsletter])
             print("Backed Up Consumer table")
 
 

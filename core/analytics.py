@@ -27,6 +27,7 @@ def main():
     consumer_location()
     consumer_profession()
     consumer_institution()
+    Consumer_send_newsletter()
 
 
 def height_calc(num):
@@ -340,3 +341,30 @@ def consumer_institution():
 
         plt.tight_layout()
         plt.savefig("static/images/plots/plot10.png")
+
+def Consumer_send_newsletter():
+    with open("backupfiles/ConsumerBUF.csv", "r") as rfile:
+        my_reader = csv.reader(rfile)
+        send_newsletter_dict = Counter()
+
+        next(my_reader)
+        for line in my_reader:
+            send_newsletter_dict.update([line[8]])  
+
+        temp_tuple_list = sorted(dict(send_newsletter_dict).items(), key=lambda x:x[1])
+        x_value = []
+        y_value = []
+        for tup in temp_tuple_list:
+            x_value.append(tup[0])
+            y_value.append(tup[1])
+
+        colors = ["#3dc5eb", "#30a6c7"]
+        plt.style.use("seaborn")
+        plt.figure(figsize=(10,4))
+        _, _, autotexts = plt.pie(y_value, labels=x_value , colors=colors, wedgeprops={"edgecolor":"white"}, autopct="%1.1f%%")
+        for autotext in autotexts:
+            autotext.set_color('white')
+
+        plt.title("CONSUMERS' SEND_NEWSLETTER")
+        plt.tight_layout()
+        plt.savefig("static/images/plots/plot11.png")

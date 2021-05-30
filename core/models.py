@@ -95,6 +95,8 @@ class Consumer(models.Model):
     profession = models.CharField(max_length=200, null=False, blank=False)
     institution = models.CharField(max_length=200, null=False, blank=False)
     social_link = models.URLField(null=True, blank=True)
+    initiative_part = models.ManyToManyField(Initiative, related_name="consumer_initiative", blank=True)
+    send_newsletter = models.BooleanField(null=False, blank=False)
 
     def __str__(self):
         return f"{self.name}"

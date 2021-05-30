@@ -40,9 +40,9 @@ class ResourceAdmin(admin.ModelAdmin):
     filter_horizontal = ("followed_initiative", "related_tag")
 
 class ConsumerAdmin(NumericFilterModelAdmin, admin.ModelAdmin):
-    list_display = ("name", "email", "age", "location", "profession", "institution")
+    list_display = ("name", "email", "age", "location", "profession", "institution", "send_newsletter")
     search_fields = ("name", "email", "location", "profession", "institution", "social_link")
-    list_filter = (("age", SliderNumericFilter), )
+    list_filter = (("age", SliderNumericFilter), "send_newsletter", "initiative_part")
 
 
 
