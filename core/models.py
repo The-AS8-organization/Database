@@ -9,7 +9,6 @@ class UserAdditionalInfo(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
 
     # additional
-    profile_pic = models.ImageField(upload_to='profile_pics', null=True, blank=True)
     github_profile = models.URLField(null=True, blank=True)
     discord_username = models.CharField(max_length=100, null=True, blank=True)
     social_link = models.URLField(null=True, blank=True)
