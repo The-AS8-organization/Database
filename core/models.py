@@ -51,11 +51,12 @@ class Organization(models.Model):
     related_tag = models.ManyToManyField(Tag, related_name="org_tag", blank=True)
 
     def __str__(self):
-        return f"{self.name} • {self.category}"
+        return f"{self.name} • {self.popularity}"
 
     def save(self, *args, **kwargs):
         self.location = self.location.title()
-        self.institution = self.institution.title()
+        if self.institution != None:
+            self.institution = self.institution.title()
         return super(Organization, self).save(*args, **kwargs)
 
 
