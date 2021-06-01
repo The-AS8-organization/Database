@@ -42,6 +42,7 @@ class ResourceAdmin(admin.ModelAdmin):
 class ConsumerAdmin(NumericFilterModelAdmin, admin.ModelAdmin):
     list_display = ("name", "email", "age", "location", "profession", "institution", "send_newsletter")
     search_fields = ("name", "email", "location", "profession", "institution", "social_link")
+    filter_horizontal = ("initiative_part", )
     list_filter = (("age", SliderNumericFilter), "send_newsletter", "initiative_part")
 
 

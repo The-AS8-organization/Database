@@ -83,7 +83,7 @@ class Resource(models.Model):
     related_tag = models.ManyToManyField(Tag, related_name="resource_tag", blank=True)
 
     def __str__(self):
-        return f"{self.platform} • {self.parent_org.name}"
+        return f"{self.name} • {self.parent_org.name}"
 
 
 class Consumer(models.Model):
