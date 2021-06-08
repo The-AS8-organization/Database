@@ -199,7 +199,7 @@ def organization_resources():
 
         next(my_reader)
         for line in my_reader:
-            org_dict.update([line[5]])   
+            org_dict.update([line[4]])   
 
         temp_tuple_list = sorted(dict(org_dict).items(), key=lambda x:x[1])
         x_value = []

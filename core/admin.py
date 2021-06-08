@@ -23,7 +23,7 @@ class TagAdmin(admin.ModelAdmin):
 
 class OrganizationAdmin(admin.ModelAdmin):
     list_display = ("name",  "email", "site", "location", "popularity", "is_active", "is_club")
-    search_fields = ("name", "location", "email", "site", "Institution")
+    search_fields = ("name", "location", "email", "site", "institution")
     list_filter = ("popularity", "is_club", "is_active", "related_tag")
     filter_horizontal = ("related_tag", )
 
