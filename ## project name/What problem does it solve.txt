@@ -10,3 +10,5 @@ Connectivity issue among IT clubs of different institutions
   • Gather every possible learning resources in a single place (our resource website)
     • People accorss the country can access the resources completely free from a single platform
     • Clubs can increase their promotion and views
+
+# this is a newline
