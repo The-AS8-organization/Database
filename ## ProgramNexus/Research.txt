@@ -4,10 +4,10 @@
   • CSS3
   • SASS
   • BootStarp
-	• JavaScript
+  • JavaScript
   • SQLite
   • Git & GitHub
-	• Heroku
+  • Heroku
   • AWS
   • Discord
-	• Facebook Pages
+  • Facebook Pages
