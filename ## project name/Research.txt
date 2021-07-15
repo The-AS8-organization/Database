@@ -1,0 +1,13 @@
+# Find out what services these tech provides. Write the overview of from their official website and also their purposes (each 3-4 lines)
+  • Python Django
+  • HTM5
+  • CSS3
+  • SASS
+  • BootStarp
+	• JavaScript
+  • SQLite
+  • Git & GitHub
+	• Heroku
+  • AWS
+  • Discord
+	• Facebook Pages
