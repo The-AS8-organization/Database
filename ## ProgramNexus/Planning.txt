@@ -1,0 +1,18 @@
+# Stage 1
+  • Problem will be connectivity issue between school- college clubs
+  • Research
+  • PDF ready
+    ○ Project Name
+    ○ Overview
+    ○ Description
+    ○ Technology Stack
+    ○ why you choose this idea
+    ○ what problem does it solve
+  • Ensure maximum contributions on github repo
+  • Networking with judges
+  • Submit in 12 days
+
+
+Stage 2
+  • Write down Speech 
+  • Documentation Type video

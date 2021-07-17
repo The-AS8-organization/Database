@@ -1,0 +1,29 @@
+    Services these tech provides:
+    
+  • Python Django: Django is a high-level python based free & open-source web framework that follows model template views (MTV) architectural patterns. Its primary goal is to ease                      the creation of complex, database driven websites. It takes security issues seriously & help developers avoid many common security mistakes.
+  
+  • HTML5: HTML is a markup language used for structuring & presenting content on the World Wide Web. It is the 5th & last major HTML version that is World Wide Web Consortium (W3C)            recommended. It includes detailed processing models to encourage more interoperable implementations. It extends, improves & rationalizes the markup available for documents            & introduces markup & APIs for application programming interfaces.
+  
+  
+  • CSS3: CSS3 also known as cascading style sheet, is the latest version of the CSS specification. It adds several new styling features & improvements to enhance the web                       presentation. Some major modules of CSS3 are: Box model, image value & replaced content, Text Effects, Selectors, Backgrounds & borders, User interface (UI) etc. It allows           one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. It can be used with any XML-based markup language.
+  
+  • SASS: SASS is a preprocessor scripting language that is interpreted or complied into Cascading Style Sheets. It is the scripting language by itself. It reduces the repetition of           CSS & therefore saves time. Mainly, SASS works throughout a process named transpiling that converts the code of sass into standard CSS.
+  
+  • BootStarp: Bootstrap is a free & open-source CSS framework directed at responsive, mobile-first front-end development. It contains CSS & Javascript-based                                        design templates for typography, forms, buttons, navigation, carousel and other interface components.
+  
+  • JavaScript: Javascript is light weighted, interpreted, compiled programming language with first-class functions. It is prototype-based, multi-paradigm, single-threaded, dynamic                   language. It is client scripting language, mainly used for creating web pages. It is used when a webpage is to be made dynamic and add special effects on pages like                   rollover, roll out and many types of graphics.
+  
+  
+  • SQLite: SQlite is a C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine. It is the most used database engine in             the world. It is also built into mobile phone & most computers & bundled inside countless other applications. It can be used to create a database, define tables, insert               and change rows, run queries and manage an SQLite database file. SQLite uses PostgreSQL as a reference platform.
+  
+  • Git: Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. It is software            for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. Its goals          include speed, data integrity, and support for distributed, non-linear workflows (thousands of parallel branches running on different systems). 
+  
+  • GitHub: Github is a provider of internet hosting for software development & version control using Git. It offers the distributed version control & source code management                     functionality of Git, along with its own features. It provides access control & several collaboration features such as bug tracking, feature requests, task management,               continuous integration for every project.  
+  
+  • Heroku: Heroku is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud. Developers use Heroku to deploy, manage,               and scale modern apps. Heroku supports programming languages Ruby, Java, Node.js, Scala, Clojure, Python, PHP and Go. 
+  
+  • AWS: AWS is a subsidiary of Amazon providing on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered pay-as-you-go basis. It                  includes a mixture of infrastructure as a service (IaaS), platform as a service (PaaS) and packaged software as a service (SaaS) offering. 
+  
+  • Discord: Discord is a platform where you can make home for your communities & friends. Like some other social medias, discord has also system like text, voice & video. It                      basically helps friends & communities come together to hang out and explore their interests.
+  
+  • Facebook Pages: Facebook page is another initiative of Facebook authority. It allow businesses to develop their brand, grow their audience and start conversations with customers                     & people interested in learning more. It helps the businessman to showcase their products & reach out to their valued customers. 
