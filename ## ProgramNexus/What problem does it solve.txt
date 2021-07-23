@@ -1,14 +1,16 @@
-Connectivity issue among IT clubs of different institutions
-  • Collaborate on events
-  • More availability of Fundings from sponsors
-  • Spread their updates accorss multiple institutions
-  • Ensure maximum participation from other institutions
-  • More availability of experienced and professional speakers
-  • Community Representative and Campus Ambassador support
-    • Decrease the hastle of multiple recruitment
-  • Store all the information in our database site
-  • Gather every possible learning resources in a single place (our resource website)
-    • People accorss the country can access the resources completely free from a single platform
-    • Clubs can increase their promotion and views
+ What problem does it solve?
+ProgramNexus project’s major goal is to serve as a hub for all coding-related platforms in Bangladesh. We discovered that some of the IT-related clubs at some of the country's most prestigious institutions were financially solid and provided a wealth of resources to their pupils. On the contrary, other institutions around the outlying part of the country may have had similar clubs, but there were insufficient resources and possibilities. Here we will be working as a bridge for coding enthusiasts all over the country and we will make sure that no one is deprived of any opportunity. We aim to resolve the connectivity concerns among IT clubs of various institutions.
 
-# this is a newline
+Collaboration on events: Various renowned institutes hold many events where only their institute’s students take part. However, once that club joins our network, we will share their updates with clubs around the country, thus marginal students can also enhance their skills by joining such events. We will ensure maximum participation from other institutions which will build a convivial atmosphere among fellow programmers.
+
+More availability of fundings from sponsors: Due to funding constraints, numerous institutions across the country are unable to launch IT-related clubs and events. However, after we have integrated the complete system, we will try to organize events and workshops in collaboration with multiple clubs, so there will be increased opportunities and obtaining funding from sponsors will be much easier.
+
+Getting Guidance from experienced and professional speakers: Since many clubs will collaborate together, we will be able to deliver high-quality resources to the students. We will equip them with world-class instructors, speakers and mentors. We will assist them in growing in a systematic and orderly manner.
+
+Gather every possible resource in a single platform: At the first stage, most of the code learners face a lot of hassles regarding how to start and where to start. Many students are willing but they are lagging due to a lack of proper guidance. We will store every possible resource on our resource website so that they can get everything in a bundle and move forward smoothly. This learning platform will be completely free, allowing anyone from anywhere in the country to use it without spending any money.
+
+Decrease the hassle of multiple recruitments: When planning an event, most clubs recruit campus ambassadors to help spread the word about the event to numerous schools. This procedure wastes a lot of time and is often ineffective. So , we'll recruit community representatives and campus ambassadors at once so that no other club has to go through this process again. The chosen individuals will represent their institution in all sectors and will be involved in this initiative. Clubs can use campus ambassadors to promote themselves not only at other institutions, but also on the digital space and on social media platforms.
+
+Storing information and updating news: Alongside our platform’s updates and going-ahead events, we will also store all the information of other clubs on our database site. Then It will be easier for everyone to acknowledge every information and will be helpful to be always updated.
+
+Establish new IT clubs: We discovered during the "Planning Phase" that many educational institutions do not have an IT-related group. Many well-known institutions have other clubs but no IT club, which is unexpected. When we consider the big picture, we can safely state that just a small percentage of all educational institutions have an active IT club. As a result, the ProgramNexus project will attempt to develop IT clubs at schools and colleges that do not currently have one. We will offer the institution the basic resources to create their IT club with the help of our collaborators.
