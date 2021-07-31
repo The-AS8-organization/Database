@@ -1,1 +1,3 @@
-Overview will be written at the end of the document
+Overview
+
+ProgramNexus is a project aimed at connecting all information technology (IT) related clubs of educational institutions across Bangladesh. By giving required support to IT clubs and assuring significant collaboration on occasional events produced by those clubs, the project is designed to make learning resources available to anybody on a single platform.

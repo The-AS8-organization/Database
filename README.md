@@ -177,7 +177,7 @@ We highly encourage you to collborate with us in this project. You don't necessa
 # Credits
 - *Ahammad Shawki* (@ahammadshawki8) - Team Lead
 - *Audrija Dhar* (@Audrija) - Content Writing
-- *Arko Chowdhury* (@) - Database Management
+- *Arko Chowdhury* (@Arko07-quanta) - Database Management
 - *Md. Muntajim Rahman Saimon* (@Muntajim04) - Research & Development
 - *Al Naheen* (@Al-Naheen) - Website Development
 

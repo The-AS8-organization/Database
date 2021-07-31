@@ -1,0 +1,12 @@
+@use "../abstract" as abs;
+
+%btn-base {
+}
+
+.btn-primary {
+    @extend %btn-base;
+}
+
+.btn-secondary {
+    @extend %btn-base;
+}
