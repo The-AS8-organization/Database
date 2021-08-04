@@ -4,7 +4,7 @@ import os
 import csv
 from zipfile import ZipFile
 sys.path.append(os.getcwd())
-os.environ["DJANGO_SETTINGS_MODULE"] = "tsdb_app.settings"
+os.environ["DJANGO_SETTINGS_MODULE"] = "ProgramNexus.settings"
 
 import django
 django.setup()

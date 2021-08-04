@@ -1,4 +1,4 @@
-![poster](poster.jpg)
+![poster](Extras/poster.jpg)
 
 <br>
 
@@ -52,7 +52,7 @@ with those clubs in this phase.
 We are currently going through the ‘Preparation Phase’. Our database site is being developed and we have completed a preliminary study into our chances of launching this initiative and the current state of IT clubs in Bangladesh. Here are the results of our research
 work -
 
-![research](statistics.png)
+![research](Extras/statistics.png)
 
 *The sources of these data are [Wikipedia](https://en.wikipedia.org/wiki/High_schools_in_Bangladesh), [Unicef](https://data.unicef.org/wp-content/uploads/2021/05/Bangladesh-Education-Fact-Sheets_V7.pdf) and reports of multiple prestigious newspapers of Bangladesh*
 

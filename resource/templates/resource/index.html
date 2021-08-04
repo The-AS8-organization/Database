@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% extends 'resource/base.html' %}
+{% load static %}
+
+{% block body_block %}
+    <div class="container">
+        <section id="hero">
+            <div class="hero-title">
+                <h1 class="main-title">Resources <br> page is currently under <br><span class="change-color">construction</span></h1>
+                <img src="{% static 'resource/images/brand-logo.png' %}" alt="brand-logo"  class="un-img">
+            </div>
+            <div class="hero-image">
+                <img src="{% static 'resource/images/resource-graphics.svg' %}" alt="resource-graphics">
+            </div>
+        </section>
+        <div id="centered">
+            <a href="{% url 'core:index' %}"><button type="button" class="btn btn-primary btn-light on">Visit Database Site</button></a>
+        </div>
+    </div>
+{% endblock %}
