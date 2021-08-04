@@ -19,8 +19,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 BASE_TEMPLATE_DIR = os.path.join(BASE_DIR, "templates")
 CORE_TEMPLATE_DIR = os.path.join(BASE_DIR, "core/templates/core/")
 RESOURCE_TEMPLATE_DIR = os.path.join(BASE_DIR, "resource/templates/resource/")
-CORE_STATIC_DIR = os.path.join(BASE_DIR, "core/static")
-RESOURCE_STATIC_DIR = os.path.join(BASE_DIR, "resource/static")
+CORE_STATIC_DIR = os.path.join(BASE_DIR, "core/static/core/")
+RESOURCE_STATIC_DIR = os.path.join(BASE_DIR, "resource/static/resource/")
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -139,7 +139,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = [CORE_STATIC_DIR, RESOURCE_STATIC_DIR]
+STATICFILES_DIRS = [CORE_STATIC_DIR, RESOURCE_STATIC_DIR]
 
 # Login
 LOGIN_URL = '/core/user_login'
