@@ -139,7 +139,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [CORE_STATIC_DIR, RESOURCE_STATIC_DIR]
+STATIC_ROOT = [CORE_STATIC_DIR, RESOURCE_STATIC_DIR]
 
 # Login
 LOGIN_URL = '/core/user_login'
