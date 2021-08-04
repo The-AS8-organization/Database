@@ -19,7 +19,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 BASE_TEMPLATE_DIR = os.path.join(BASE_DIR, "templates")
 CORE_TEMPLATE_DIR = os.path.join(BASE_DIR, "core/templates/core/")
 RESOURCE_TEMPLATE_DIR = os.path.join(BASE_DIR, "resource/templates/resource/")
-BASE_STATIC_DIR = os.path.join(BASE_DIR, "static")
 CORE_STATIC_DIR = os.path.join(BASE_DIR, "core/static")
 RESOURCE_STATIC_DIR = os.path.join(BASE_DIR, "resource/static")
 
@@ -140,7 +139,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_STATIC_DIR, CORE_STATIC_DIR, RESOURCE_STATIC_DIR]
+STATICFILES_DIRS = [CORE_STATIC_DIR, RESOURCE_STATIC_DIR]
 
 # Login
 LOGIN_URL = '/core/user_login'
