@@ -73,7 +73,7 @@ def organization_location():
         plt.ylabel("Location")
 
         plt.tight_layout()
-        plt.savefig("static/images/plots/plot1.png")
+        plt.savefig("core/static/core/images/plots/plot1.png")
 
 
 def organization_is_club():
@@ -101,7 +101,7 @@ def organization_is_club():
 
         plt.title("ORGANIZATIONS' IS_CLUB")
         plt.tight_layout()
-        plt.savefig("static/images/plots/plot2.png")
+        plt.savefig("core/static/core/images/plots/plot2.png")
 
 
 def organization_popularity():
@@ -129,7 +129,7 @@ def organization_popularity():
 
         plt.title("ORGANIZATIONS' POPULARITY")
         plt.tight_layout()
-        plt.savefig("static/images/plots/plot3.png")
+        plt.savefig("core/static/core/images/plots/plot3.png")
 
 
 def organization_is_active():
@@ -157,7 +157,7 @@ def organization_is_active():
 
         plt.title("ORGANIZATIONS' IS_ACTIVE")
         plt.tight_layout()
-        plt.savefig("static/images/plots/plot4.png")
+        plt.savefig("core/static/core/images/plots/plot4.png")
 
 
 def organization_initiatives():
@@ -189,7 +189,7 @@ def organization_initiatives():
         plt.ylabel("Organization")
 
         plt.tight_layout()
-        plt.savefig("static/images/plots/plot5.png")
+        plt.savefig("core/static/core/images/plots/plot5.png")
 
 
 def organization_resources():
@@ -221,7 +221,7 @@ def organization_resources():
         plt.ylabel("Organization")
 
         plt.tight_layout()
-        plt.savefig("static/images/plots/plot6.png")
+        plt.savefig("core/static/core/images/plots/plot6.png")
 
 
 def consumer_location():
@@ -250,7 +250,7 @@ def consumer_location():
         plt.ylabel("Location")
 
         plt.tight_layout()
-        plt.savefig("static/images/plots/plot7.png")
+        plt.savefig("core/static/core/images/plots/plot7.png")
 
 
 def consumer_age():
@@ -282,7 +282,7 @@ def consumer_age():
         plt.ylabel("Number of Consumers")
 
         plt.tight_layout()
-        plt.savefig("static/images/plots/plot8.png")
+        plt.savefig("core/static/core/images/plots/plot8.png")
 
 
 def consumer_profession():
@@ -311,7 +311,7 @@ def consumer_profession():
         plt.ylabel("Professsion")
 
         plt.tight_layout()
-        plt.savefig("static/images/plots/plot9.png")
+        plt.savefig("core/static/core/images/plots/plot9.png")
 
 
 def consumer_institution():
@@ -340,7 +340,7 @@ def consumer_institution():
         plt.ylabel("Institution")
 
         plt.tight_layout()
-        plt.savefig("static/images/plots/plot10.png")
+        plt.savefig("core/static/core/images/plots/plot10.png")
 
 def Consumer_send_newsletter():
     with open("backupfiles/ConsumerBUF.csv", "r") as rfile:
@@ -367,4 +367,4 @@ def Consumer_send_newsletter():
 
         plt.title("CONSUMERS' SEND_NEWSLETTER")
         plt.tight_layout()
-        plt.savefig("static/images/plots/plot11.png")
+        plt.savefig("core/static/core/images/plots/plot11.png")
