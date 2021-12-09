@@ -1,5 +1,5 @@
 """
-WSGI config for ProgramNexus project.
+WSGI config for as8_db project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ProgramNexus.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'as8_db.settings')
 
 application = get_wsgi_application()

@@ -6,7 +6,7 @@ import numpy as np
 import csv
 from collections import Counter
 sys.path.append(os.getcwd())
-os.environ["DJANGO_SETTINGS_MODULE"] = "ProgramNexus.settings"
+os.environ["DJANGO_SETTINGS_MODULE"] = "as8_db.settings"
 
 import django
 django.setup()

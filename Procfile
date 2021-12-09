@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn ProgramNexus.wsgi
+web: gunicorn as8_db.wsgi
